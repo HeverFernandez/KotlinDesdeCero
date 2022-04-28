@@ -32,7 +32,13 @@ class MainActivity : AppCompatActivity() {
         //fmaps()
 
         //Lección 05
-        floops()
+        //floops()
+
+        //Lección 06
+        //tblMultiplicar()
+
+        //Leccion 07
+        suma(30)
     }
 
     //Funciones
@@ -220,6 +226,28 @@ En esta sección vamos a hablar de los array
             println("Valor con WHILE : $x")
             x += 1
         }
+    }
+
+    fun tblMultiplicar(){
+
+        var contador = 1
+        while (contador<=13){
+
+            for (i in 1..10){
+                print("$contador * $i = ")
+                println(contador*i)
+            }
+            contador ++
+        }
+    }
+
+    fun suma(num:Int){
+        var suma = 0
+        for (i in 1..num){
+            var multiplicacion = i*2 //almacena numeros pares
+            suma += multiplicacion
+        }
+        println("La suma total es = $suma")
     }
 
 }
